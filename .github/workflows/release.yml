@@ -55,7 +55,7 @@ jobs:
     # Upload rendered nomad jobs as artifacts
     - name: upload
       if: ${{ github.event.release.prerelease }}
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: nomad
         path: nomad.tar.gz
@@ -101,7 +101,7 @@ jobs:
     # Upload rendered nomad jobs as artifacts
     - name: upload
       if: ${{ !github.event.release.prerelease }}
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: nomad
         path: nomad.tar.gz
