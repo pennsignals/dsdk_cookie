@@ -18,7 +18,7 @@ jobs:
 
     - name: publish
       id: publish
-      uses: pennsignals/publish_docker-compose@v0.1.1
+      uses: pennsignals/publish_docker-compose@v0.2.5
       with:
         docker_compose: 'docker-compose.yml'
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
